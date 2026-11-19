@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📊 Administración — La Ronda</title>
+<style>
+:root{--verde:#0d2d1a;--dorado:#d29914;--rojo:#ff6b6b;--ok:#7ddc9a;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a120d;color:#e8e8e8;padding:20px}
+h1{color:var(--dorado);font-size:2.2rem;margin-bottom:4px}
+.sub{color:#9aa;font-size:.95rem;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:22px}
+.card{background:#16281b;border:1px solid #2a4a33;border-radius:12px;padding:16px}
+.c-t{color:#9fbfa8;font-size:.85rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.c-v{font-size:2.4rem;font-weight:700;line-height:1}
+.c-d{color:#8aa;font-size:.85rem;margin-top:8px}
+.panel{background:#101c14;border:1px solid #1f3626;border-radius:12px;padding:16px;margin-bottom:16px}
+.panel h2{color:var(--dorado);font-size:1.15rem;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th{text-align:left;color:#b9c9be;border-bottom:1px solid #2a4a33;padding:6px 8px;font-weight:600}
+td{padding:7px 8px;border-bottom:1px solid #1a2b20}
+.badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.78rem;font-weight:700}
+.b-ok{background:#1d3a24;border:1px solid #3f7a4f;color:#b6e6c3}
+.b-warn{background:#3a2a10;border:1px solid var(--dorado);color:#ffd97a}
+.b-bad{background:#3a1414;border:1px solid #a33;color:#ffb3b3}
+.footer{color:#778;font-size:.8rem;margin-top:18px}
+a{color:var(--dorado)}
+</style></head><body>
+<h1>📊 Administración — La Ronda</h1>
+<div class="sub">Panel de gestión · actualizado 18/11/2026 14:36</div>
+<div class="grid">
+<div class="card"><div class="c-t">Socios en padrón</div><div class="c-v" style="color:#d29914">709</div><div class="c-d">Adherentes beneficiarios: 118</div></div>
+<div class="card"><div class="c-t">Aprobados REPROCANN</div><div class="c-v" style="color:#d29914">93</div><div class="c-d">91 personas · 72 vigentes · 21 vencidos</div></div>
+<div class="card"><div class="c-t">Sin contrato firmado</div><div class="c-v" style="color:#ff6b6b">42</div><div class="c-d">Con contrato: 49</div></div>
+<div class="card"><div class="c-t">Renovaciones vencidas</div><div class="c-v" style="color:#ff6b6b">19</div><div class="c-d">Próximos 60 días: 1</div></div>
+<div class="card"><div class="c-t">Renovación ONG</div><div class="c-v" style="color:#7ddc9a">8/8</div><div class="c-d">Documentos adjuntados</div></div>
+<div class="card"><div class="c-t">Suscripciones MP</div><div class="c-v" style="color:#d29914">86</div><div class="c-d">Pausadas: 38 · Canceladas: 37</div></div>
+</div>
+
+<div class="panel"><h2>🌿 REPROCANN — estado de trámites</h2>
+<table><tr><th>Estado</th><th>Trámites</th></tr>
+<tr><td>Aprobado</td><td>93</td></tr><tr><td>Anulado</td><td>41</td></tr><tr><td>Rechazado</td><td>24</td></tr><tr><td>PendienteRevisionMedica</td><td>3</td></tr><tr><td>PendienteEvaluacion</td><td>1</td></tr><tr><td>PendienteVinculacionCultivador</td><td>1</td></tr>
+<tr><td><b>Total</b></td><td><b>163</b></td></tr></table>
+<div class="c-d" style="margin-top:10px">Duplicados detectados (misma persona, trámite viejo vencido + nuevo vigente): <b>2</b></div></div>
+
+<div class="panel"><h2>📄 Documentación de socios</h2>
+<table><tr><th>Situación</th><th>Cantidad</th><th>%</th></tr>
+<tr><td>Con contrato firmado</td><td>49</td><td>54%</td></tr>
+<tr><td>Sin contrato firmado</td><td>42</td><td>46%</td></tr>
+</table>
+<div class="c-d" style="margin-top:10px">Campaña WhatsApp: 5 mensajes enviados · 32 con teléfono válido · <span class="badge b-warn">10 sin teléfono</span></div></div>
+
+<div class="panel"><h2>⏰ Vencimientos próximos (60 días)</h2>
+<table><tr><th>Paciente</th><th>Vence</th><th>Días</th></tr>
+<tr><td>Lucia CASALINS</td><td>2026-12-19</td><td>31</td></tr>
+</table>
+<div class="c-d" style="margin-top:10px">Fuente: archivo de vencimientos generado 2026-11-18T09:00:23 · 148 pacientes</div></div>
+
+<div class="panel"><h2>🏛️ Renovación ONG — documentación</h2>
+<table><tr><th>Requisito</th><th>Estado</th></tr>
+<tr><td>01 Inscripción IGJ</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+<tr><td>02 Estatuto</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+<tr><td>03 Convenios con instituciones</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+<tr><td>04 Antecedentes penales (CD)</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+<tr><td>05 Certificado formación Director Médico</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+<tr><td>06 Designación Director Médico</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+<tr><td>07 Designación Responsable Técnico</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+<tr><td>08 Notificación de cultivo</td><td><span class="badge b-ok">Adjuntado</span></td></tr>
+</table>
+<div class="c-d" style="margin-top:10px">Pendiente: título de Ing. Agrónomo (anexo 07) · confirmar miembros de comisión directiva</div></div>
+
+<div class="footer">La Ronda ONG — delegación Bariloche · datos del workspace local · 18/11/2026 14:36</div>
+</body></html>
